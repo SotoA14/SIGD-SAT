@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registrar documento</title>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="../css/registrar-documento.css">
+</head>
+<body>
+	<main>
+		<form action="" class="formulario" id="formulario">
+			<!-- Grupo: Registro documento -->
+			<div class="formulario__grupo" id="grupo__id-documento">
+				<label for="id-documento" class="formulario__label">id Documento</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="id-documento" id="id-documento" placeholder="">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">el Id solo debe tener números</p>
+			</div>
+
+			<!-- Grupo: tipo documento -->
+			<div class="formulario__grupo" id="grupo__tipo-documento">
+				<label for="nombre" class="formulario__label">Tipo de documento</label>
+					<input class="formulario__checkbox" type="checkbox" name="contrato" id="contrato">
+					contrato
+				</label>
+			</div>
+
+			<!-- Grupo: Foliatura-->
+			<div class="formulario__grupo" id="grupo__foliatura">
+				<label for="nombre" class="formulario__label">Foliatura</label>
+					<input class="formulario__checkbox" type="checkbox" name="alfanumerica" id="alfanumerica">
+					Alfanumérica
+				</label>
+			</div>
+			
+			
+
+
+			<!-- Grupo: Asunto -->
+			<div class="formulario__grupo" id="grupo__asunto">
+				<label for="nombre" class="formulario__label">Asunto</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="asunto" id="asunto" placeholder="">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Solo debe contener letras y números, no se permite guión bajo</p>
+			</div>
+
+			<!-- Grupo: Encabezado -->
+			<div class="formulario__grupo" id="grupo__encabezado">
+				<label for="password" class="formulario__label">Encabezado</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="encabezado" id="encabezado">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Límite de 200 palabras</p>
+			</div>
+
+			<!-- Grupo: Contenido-Documento -->
+			<div class="formulario__grupo" id="grupo__contenido-documento">
+				<label for="password2" class="formulario__label">Contenido de documento</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="contenido-documento" id="contenido-documento">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Límite de 500 caracteres</p>
+			</div>
+
+			<!-- Grupo: Firma usuario -->
+			<div class="formulario__grupo" id="grupo__firma-usuario">
+				<label for="correo" class="formulario__label">Firma usuario</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="firma-usuario" id="firma-usuario" placeholder="nombre de usuario">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">solo se permite letras y números dentro del usuario</p>
+			</div>
+
+			<!-- Grupo: Logo-hospital-->
+			<div class="formulario__grupo" id="grupo__logo-hospital">
+				<label for="telefono" class="formulario__label">Logo</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="logo-hospital" id="telefono" placeholder="nombre del hospital">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Solo se coloca el nombre del hospital</p>
+			</div>
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Documento registrado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+
+	<script src="../JavaScript/formulario.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
